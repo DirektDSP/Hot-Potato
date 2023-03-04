@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="bc1p6K" name="Hot Potato" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
+              version="1.0" companyName="Direkt Software" companyWebsite="www.direktdsp.com"
+              companyCopyright="All Rights Reserved" companyEmail="direktdsp@gmail.com"
+              pluginManufacturer="Direkt" pluginName="Hot Potato" pluginDesc="Roasting Hot Distortion">
+  <MAINGROUP id="BuOR7w" name="Hot Potato">
+    <GROUP id="{D136B2E2-DCD7-13FE-6E7C-8286767EA121}" name="Gui">
+      <FILE id="A4MZS6" name="PresetPanel.h" compile="0" resource="0" file="Source/PresetPanel.h"/>
+    </GROUP>
+    <GROUP id="{B6AE8ECD-0183-44C2-65AF-05681449708F}" name="Service">
+      <FILE id="bFEoPP" name="PresetManager.cpp" compile="1" resource="0"
+            file="Source/PresetManager.cpp"/>
+      <FILE id="bMd8JV" name="PresetManager.h" compile="0" resource="0" file="Source/PresetManager.h"/>
+    </GROUP>
+    <GROUP id="{2800C2E7-7391-EF92-B102-5ABC64F1D6BE}" name="Assets">
+      <FILE id="U9BNHz" name="LittlePhatty_OFF.png" compile="0" resource="1"
+            file="../../Direkt Software/LittlePhatty_OFF.png"/>
+      <FILE id="JaSbXz" name="HotPotatoBG.png" compile="0" resource="1" file="C:/Users/seamu/Desktop/Direkt/HotPotatoBG.png"/>
+      <FILE id="kQ6nN0" name="MiniBrute.png" compile="0" resource="1" file="../../Direkt Software/MiniBrute.png"/>
+      <FILE id="NYUcvM" name="LittlePhatty.png" compile="0" resource="1"
+            file="../../Direkt Software/LittlePhatty.png"/>
+      <FILE id="uQZ4qj" name="Toggle.png" compile="0" resource="1" file="../../Direkt Software/Toggle.png"/>
+      <FILE id="wpsBl9" name="Toggle1.png" compile="0" resource="1" file="../../Direkt Software/Toggle1.png"/>
+      <FILE id="xg42Ow" name="Knob.png" compile="0" resource="1" file="../../Direkt Software/Knob.png"/>
+    </GROUP>
+    <GROUP id="{F1CFE9A1-E97A-E4D5-E2E4-C69DCDC576D1}" name="Source">
+      <FILE id="x4Mylo" name="StyleSheet.h" compile="0" resource="0" file="Source/StyleSheet.h"/>
+      <FILE id="aqrwrP" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="K3j0D7" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="qXkSrj" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="mMurNe" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Hot Potato"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Hot Potato"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="C:/Users/seamu/juce-7.0.3/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="C:/Users/seamu/juce-7.0.3/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="C:/Users/seamu/juce-7.0.3/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="C:/Users/seamu/juce-7.0.3/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="C:/Users/seamu/juce-7.0.3/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="C:/Users/seamu/juce-7.0.3/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="C:/Users/seamu/juce-7.0.3/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="C:/Users/seamu/juce-7.0.3/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="C:/Users/seamu/juce-7.0.3/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="C:/Users/seamu/juce-7.0.3/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="C:/Users/seamu/juce-7.0.3/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="C:/Users/seamu/juce-7.0.3/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="C:/Users/seamu/juce-7.0.3/JUCE/modules"/>
+        <MODULEPATH id="juce_product_unlocking" path="C:/Users/seamu/juce-7.0.3/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="C:/Users/seamu/juce-7.0.3/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_product_unlocking" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
