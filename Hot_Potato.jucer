@@ -15,15 +15,13 @@
       <FILE id="bMd8JV" name="PresetManager.h" compile="0" resource="0" file="Source/PresetManager.h"/>
     </GROUP>
     <GROUP id="{2800C2E7-7391-EF92-B102-5ABC64F1D6BE}" name="Assets">
-      <FILE id="U9BNHz" name="LittlePhatty_OFF.png" compile="0" resource="1"
-            file="../../Direkt Software/LittlePhatty_OFF.png"/>
+      <FILE id="enJdav" name="LittlePhatty.png" compile="0" resource="1"
+            file="Assets/LittlePhatty.png"/>
+      <FILE id="xxi3Hc" name="LittlePhatty_OFF.png" compile="0" resource="1"
+            file="Assets/LittlePhatty_OFF.png"/>
+      <FILE id="Q7clAO" name="Toggle.png" compile="0" resource="1" file="Assets/Toggle.png"/>
+      <FILE id="C0eG7Y" name="Toggle1.png" compile="0" resource="1" file="Assets/Toggle1.png"/>
       <FILE id="JaSbXz" name="HotPotatoBG.png" compile="0" resource="1" file="C:/Users/seamu/Desktop/Direkt/HotPotatoBG.png"/>
-      <FILE id="kQ6nN0" name="MiniBrute.png" compile="0" resource="1" file="../../Direkt Software/MiniBrute.png"/>
-      <FILE id="NYUcvM" name="LittlePhatty.png" compile="0" resource="1"
-            file="../../Direkt Software/LittlePhatty.png"/>
-      <FILE id="uQZ4qj" name="Toggle.png" compile="0" resource="1" file="../../Direkt Software/Toggle.png"/>
-      <FILE id="wpsBl9" name="Toggle1.png" compile="0" resource="1" file="../../Direkt Software/Toggle1.png"/>
-      <FILE id="xg42Ow" name="Knob.png" compile="0" resource="1" file="../../Direkt Software/Knob.png"/>
     </GROUP>
     <GROUP id="{F1CFE9A1-E97A-E4D5-E2E4-C69DCDC576D1}" name="Source">
       <FILE id="x4Mylo" name="StyleSheet.h" compile="0" resource="0" file="Source/StyleSheet.h"/>
