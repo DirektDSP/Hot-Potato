@@ -159,16 +159,6 @@ float dist(float x, float g, float f, float p)
     return output * 0.8f;
 }
 
-class isBypassed
-{
-public:
-        bool bp;
-        
-        bool isByp(bool bp) {
-			return bp;
-        }
-};
-
 void Hot_PotatoAudioProcessor::processBlock(juce::AudioBuffer<float>& buffer, juce::MidiBuffer& midiMessages)
 {
     juce::ScopedNoDenormals noDenormals;
@@ -206,11 +196,8 @@ void Hot_PotatoAudioProcessor::processBlock(juce::AudioBuffer<float>& buffer, ju
     for (int channel = 0; channel < totalNumInputChannels; ++channel)
     {
         auto* channelData = buffer.getWritePointer(channel);
-        
-        
     }
-
-
+    
     for (int sample = 0; sample < buffer.getNumSamples(); ++sample)
     {
             // clip the signal to the amp value
@@ -233,13 +220,6 @@ void Hot_PotatoAudioProcessor::processBlock(juce::AudioBuffer<float>& buffer, ju
                     channelData[sample] = input;
                 }
             }
-
-			// if bypassed, change the RasterKnob to diff image
-            if (bp) {
-            
-            
-            }
-            
     }
 };
 

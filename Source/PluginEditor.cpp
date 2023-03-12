@@ -20,6 +20,7 @@ Hot_PotatoAudioProcessorEditor::Hot_PotatoAudioProcessorEditor (Hot_PotatoAudioP
 		audioProcessor (p),
 		presetPanel(p.getPresetManager())
 {
+
     // Make sure that before the constructor has finished, you've set the
     // editor's size to whatever you need it to be.
 
@@ -58,14 +59,17 @@ void Hot_PotatoAudioProcessorEditor::paint (juce::Graphics& g)
 
 	gainSlider.setSliderStyle(juce::Slider::RotaryHorizontalVerticalDrag);
 	gainSlider.setTextBoxStyle(juce::Slider::TextBoxBelow, false, textBoxWidth, textBoxHeight);
+	gainSlider.setTextValueSuffix(" dB");
 	addAndMakeVisible(gainSlider);
 
 	outGain.setSliderStyle(juce::Slider::RotaryHorizontalVerticalDrag);
 	outGain.setTextBoxStyle(juce::Slider::TextBoxBelow, false, textBoxWidth, textBoxHeight);
+	outGain.setTextValueSuffix(" dB");
 	addAndMakeVisible(outGain);
 
 	inGain.setSliderStyle(juce::Slider::RotaryHorizontalVerticalDrag);
 	inGain.setTextBoxStyle(juce::Slider::TextBoxBelow, false, textBoxWidth, textBoxHeight);
+	inGain.setTextValueSuffix(" dB");
 	addAndMakeVisible(inGain);
 
 	freqSlider.setSliderStyle(juce::Slider::RotaryHorizontalVerticalDrag);
@@ -74,10 +78,12 @@ void Hot_PotatoAudioProcessorEditor::paint (juce::Graphics& g)
 
 	clipSlider.setSliderStyle(juce::Slider::RotaryHorizontalVerticalDrag);
 	clipSlider.setTextBoxStyle(juce::Slider::TextBoxBelow, false, textBoxWidth, textBoxHeight);
+	clipSlider.setTextValueSuffix(" dB");
 	addAndMakeVisible(clipSlider);
 
 	powerSlider.setSliderStyle(juce::Slider::RotaryHorizontalVerticalDrag);
 	powerSlider.setTextBoxStyle(juce::Slider::TextBoxBelow, false, textBoxWidth, textBoxHeight);
+	powerSlider.setTextValueSuffix(" dB");
 	addAndMakeVisible(powerSlider);
 
 	bypassButton.setButtonText("Bypass");

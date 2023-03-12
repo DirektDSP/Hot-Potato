@@ -7,8 +7,9 @@
 class RasterKnob : public juce::Slider
 {
 public:
+
 	RasterKnob() : juce::Slider(SliderStyle::RotaryHorizontalVerticalDrag, TextEntryBoxPosition::NoTextBox)
-	{
+	{	
 		setMouseCursor(MouseCursor::PointingHandCursor);
 		setLookAndFeel(&mainSliderLookAndFeel);
 	}
@@ -18,18 +19,20 @@ public:
 		setLookAndFeel(nullptr);
 	}
 
-private:
-	
 	class RasterKnobLookAndFeel : public juce::LookAndFeel_V4
 	{
 	public:
+
 		RasterKnobLookAndFeel()
 		{
 			image = juce::ImageCache::getFromMemory(BinaryData::LittlePhatty_png, BinaryData::LittlePhatty_pngSize);
-			byImage = juce::ImageCache::getFromMemory(BinaryData::LittlePhatty_OFF_png, BinaryData::LittlePhatty_OFF_pngSize);
-		
+			// byImage = juce::ImageCache::getFromMemory(BinaryData::LittlePhatty_OFF_png, BinaryData::LittlePhatty_OFF_pngSize);
 		}
 
+		~RasterKnobLookAndFeel() override
+		{
+		}
+		
 		void drawRotarySlider(
 			juce::Graphics& g,
 			int x,
@@ -43,48 +46,31 @@ private:
 		{
 			const auto frames = 101;
 			const auto frameId = static_cast<int>(ceil(sliderPosProportional * (static_cast<float>(frames) - 1.0f)));
-#
+
 			// image is vertical strip, each frame is 1/100th of the height
 
-			// if apvts.getRawParameterValue("BYPASS")->load() == true then draw byImage
-			// else draw image
-			bp = true;
-			
-			if (!bp) {
-				g.drawImage(image,
-					x,
-					y,
-					width,
-					height,
-					0,
-					frameId * image.getHeight() / frames,
-					image.getWidth(),
-					image.getHeight() / frames);
-			}
-			else {
-				g.drawImage(byImage,
-					x,
-					y,
-					width,
-					height,
-					0,
-					frameId * byImage.getHeight() / frames,
-					byImage.getWidth(),
-					byImage.getHeight() / frames);
-			}
+			g.drawImage(image,
+				x,
+				y,
+				width,
+				height,
+				0,
+				frameId * image.getHeight() / frames,
+				image.getWidth(),
+				image.getHeight() / frames);
 		}
-
 
 	private:
 		juce::Image image;
 		juce::Image byImage;
-		bool bp;
-		
-		
+
+		bool bp = false;
+
 
 		JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(RasterKnobLookAndFeel)
 	} mainSliderLookAndFeel;
-
+	
+private:
 	JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(RasterKnob)
 };
 

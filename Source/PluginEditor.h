@@ -20,6 +20,7 @@ public:
     void paint (juce::Graphics&) override;
     void resized() override;
     
+
 private:
     // This reference is provided as a quick way for your editor to
     // access the processor object that created it.
@@ -29,12 +30,15 @@ private:
 
     ExtLabel versionLabel;
 
+
+
     RasterKnob gainSlider;
     RasterKnob outGain;
     RasterKnob inGain;
     RasterKnob freqSlider;
 	RasterKnob clipSlider;
     RasterKnob powerSlider;
+
 
     BypassButton bypassButton;
     
