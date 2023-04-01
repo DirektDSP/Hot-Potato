@@ -2,9 +2,9 @@
 
 <JUCERPROJECT id="bc1p6K" name="Hot Potato" projectType="audioplug" useAppConfig="0"
               addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
-              version="1.0" companyName="Direkt Software" companyWebsite="www.direktdsp.com"
+              version="1.1" companyName="DirektDSP" companyWebsite="www.direktdsp.com"
               companyCopyright="All Rights Reserved" companyEmail="direktdsp@gmail.com"
-              pluginManufacturer="Direkt" pluginName="Hot Potato" pluginDesc="Roasting Hot Distortion">
+              pluginManufacturer="DirektDSP" pluginName="Hot Potato">
   <MAINGROUP id="BuOR7w" name="Hot Potato">
     <GROUP id="{D136B2E2-DCD7-13FE-6E7C-8286767EA121}" name="Gui">
       <FILE id="A4MZS6" name="PresetPanel.h" compile="0" resource="0" file="Source/PresetPanel.h"/>

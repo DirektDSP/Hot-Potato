@@ -186,6 +186,7 @@ void Hot_PotatoAudioProcessor::processBlock(juce::AudioBuffer<float>& buffer, ju
 	auto g = apvts.getRawParameterValue("GAIN")->load();
     auto f = apvts.getRawParameterValue("FREQ")->load();
 	auto p = apvts.getRawParameterValue("POWER")->load();
+    p = p / 10; // Changes the 0->100 to 0->10
 	auto c = apvts.getRawParameterValue("CLIP")->load();
 	auto g2 = apvts.getRawParameterValue("OUTGAIN")->load();
 	auto i = apvts.getRawParameterValue("INGAIN")->load();

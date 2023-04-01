@@ -21,7 +21,7 @@ namespace BinaryData
     const int            Toggle1_pngSize = 47457;
 
     extern const char*   HotPotatoBG_png;
-    const int            HotPotatoBG_pngSize = 271430;
+    const int            HotPotatoBG_pngSize = 268616;
 
     // Number of elements in the namedResourceList and originalFileNames arrays.
     const int namedResourceListSize = 5;

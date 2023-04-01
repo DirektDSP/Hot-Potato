@@ -74,6 +74,7 @@ void Hot_PotatoAudioProcessorEditor::paint (juce::Graphics& g)
 
 	freqSlider.setSliderStyle(juce::Slider::RotaryHorizontalVerticalDrag);
 	freqSlider.setTextBoxStyle(juce::Slider::TextBoxBelow, false, textBoxWidth, textBoxHeight);
+	freqSlider.setTextValueSuffix(" dB");
 	addAndMakeVisible(freqSlider);
 
 	clipSlider.setSliderStyle(juce::Slider::RotaryHorizontalVerticalDrag);
@@ -83,7 +84,7 @@ void Hot_PotatoAudioProcessorEditor::paint (juce::Graphics& g)
 
 	powerSlider.setSliderStyle(juce::Slider::RotaryHorizontalVerticalDrag);
 	powerSlider.setTextBoxStyle(juce::Slider::TextBoxBelow, false, textBoxWidth, textBoxHeight);
-	powerSlider.setTextValueSuffix(" dB");
+	powerSlider.setTextValueSuffix(" %");
 	addAndMakeVisible(powerSlider);
 
 	bypassButton.setButtonText("Bypass");
