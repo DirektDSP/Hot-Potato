@@ -55,7 +55,7 @@ void Hot_PotatoAudioProcessorEditor::paint (juce::Graphics& g)
 //    g.fillAll (getLookAndFeel().findColour (juce::ResizableWindow::backgroundColourId));
 
 	// draw bg image
-//	g.drawImage(backgroundImage, getLocalBounds().toFloat());
+	g.drawImage(backgroundImage, getLocalBounds().toFloat());
 
 	gainSlider.setSliderStyle(juce::Slider::RotaryHorizontalVerticalDrag);
 	gainSlider.setTextBoxStyle(juce::Slider::TextBoxBelow, false, textBoxWidth, textBoxHeight);

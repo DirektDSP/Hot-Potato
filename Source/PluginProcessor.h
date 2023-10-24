@@ -73,6 +73,7 @@ public:
         params.push_back(std::make_unique<juce::AudioParameterFloat>(ParameterID{"INGAIN", 1}, "In Gain", 0.0f, 1.5f, 1.0f));
         
         params.push_back(std::make_unique<juce::AudioParameterBool>(ParameterID{"BYPASS", 1}, "Bypass", false));
+        
 
         
 		return { params.begin(), params.end() };
@@ -82,6 +83,7 @@ private:
     //==============================================================================
     //AudioProcessorValueTreeState apvts;
     std::unique_ptr<Service::PresetManager> presetManager;
+
     
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (Hot_PotatoAudioProcessor)
 };
