@@ -52,10 +52,10 @@ void Hot_PotatoAudioProcessorEditor::paint (juce::Graphics& g)
 	auto backgroundImage = juce::ImageCache::getFromMemory(BinaryData::HotPotatoBG_png, BinaryData::HotPotatoBG_pngSize);
 	
     // (Our component is opaque, so we must completely fill the background with a solid colour)
-    g.fillAll (getLookAndFeel().findColour (juce::ResizableWindow::backgroundColourId));
+//    g.fillAll (getLookAndFeel().findColour (juce::ResizableWindow::backgroundColourId));
 
 	// draw bg image
-	g.drawImage(backgroundImage, getLocalBounds().toFloat());
+//	g.drawImage(backgroundImage, getLocalBounds().toFloat());
 
 	gainSlider.setSliderStyle(juce::Slider::RotaryHorizontalVerticalDrag);
 	gainSlider.setTextBoxStyle(juce::Slider::TextBoxBelow, false, textBoxWidth, textBoxHeight);
